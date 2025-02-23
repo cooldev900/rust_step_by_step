@@ -46,4 +46,10 @@ mod tests {
         let arr = [1, 2, 3, 2, 5];
         assert_eq!(linear_search_algorithm(&arr, &2), Some(1));
     }
+
+    #[test]
+    fn test_linear_search_algorithm_char() {
+        let arr = vec!['a', 'b', 'c', 'd', 'e'];
+        assert_eq!(linear_search_algorithm(&arr, &'c'), Some(2));
+    }
 }
